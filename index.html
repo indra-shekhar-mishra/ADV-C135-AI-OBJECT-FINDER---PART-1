@@ -14,29 +14,20 @@
     </head>
     <body background="background.jpg">
         <center>
-            <h1 class="btn btn-info heading">AI Object Finder
-                <br>
-                <span style="color: black;font-size: 13px;">The input name which you will give should match the names present in CoCo model then only it will detect</span>
-            </h1>
-
-            <br><br>
-            <div class="form-group" style="width: 30%;">
-            <label >Object Name : </label>
-            <input type="text" class="form-control" id="object_name">
-            <br><br>
-            <button onclick="start()" class="btn btn-sucess">Start</button>
-            </div>
-
-            <h3 id="status" class="btn btn-danger"></h3>
-            <h3 id="object_status" class="btn btn-warning"></h3>
+            <label class="btn btn-warning" id="hd">AI OBJECT FINDER</label>
+            <h3>Object Name:</h3>
+            <input type="text" class="form-control" id="input" placeholder="ALL LOWERCASE"></input>
+            <button onclick="star()" class="btn btn-success">Start</button>
+            <br>
+            <h4 class="btn btn-info" id="statl"></h4><br>
+            <h4 class="btn btn-danger" id="len"></h4><br>
+            <h4 class="btn btn-primary" id="objs"></h4>
         </center>
-        
-       <script src="main.js"></script>
-       <center>
-        <div class="copy_right_footer">
-            Developed by INDRA 
-          </div>
-        </center>
+        <script src="main.js"></script>
+    
+       <canvas id="Canvas" class="p5Canvas" width="1140" height="1140" style="width: 380px;height: 380px;position: absolute; left: 1773px; top: 1819px;"></canvas><video playsinline="" crossorigin="anonymous" style="display: none;" width="640" height="480"></video>
+       <div class="copy_right_footer">
+      Developed by - Indra
+    </div>
     </body>
-
 </html>
